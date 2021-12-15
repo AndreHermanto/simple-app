@@ -8,7 +8,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>This is just an example</h1>
       <p className="show-current-time">{/*show current time*/}</p>
       <div className="input-lower-case">
         <p>Check if input are all in lower case</p>

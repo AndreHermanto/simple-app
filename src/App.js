@@ -5,10 +5,16 @@ import "./App.css";
 const DOGS_GET_BREEDS_API = "https://dog.ceo/api/breeds/list/all";
 
 function App() {
+  const [currentTime, setCurrentTime] = useState(0);
+
+  useEffect(() => {
+    setInterval(() => setCurrentTime(new Date().toLocaleString()), 1000);
+  });
+
   return (
     <div className="App">
       <h1>Example from Dennis</h1>
-      <p className="show-current-time">{/*show current time*/}</p>
+      <p className="show-current-time">{currentTime}</p>
       <div className="input-lower-case">
         <p>Check if input are all in lower case</p>
         <input type="text"></input>

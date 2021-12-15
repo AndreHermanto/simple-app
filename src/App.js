@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TitleComp from './TitleComp.js';
 
 const DOGS_GET_BREEDS_API = 'https://dog.ceo/api/breeds/list/all';
 
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      <TitleComp title="Simple App"></TitleComp>
       <p className="show-current-time">{/*show current time*/}</p>
       <div className="input-lower-case">
         <p>Check if input are all in lower case</p>
